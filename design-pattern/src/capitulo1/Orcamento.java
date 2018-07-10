@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import capitulo2.Item;
+import capitulo5.EmAprovacao;
 import capitulo5.EstadoOrcamento;
 
 public class Orcamento {
@@ -17,6 +18,7 @@ public class Orcamento {
 		this.valor = valor;
 		// this.imposto = imposto;
 		itens = new ArrayList<>();
+		estadoAtual = new EmAprovacao();
 	}
 
 	public void setValor(double valor) {
@@ -41,6 +43,18 @@ public class Orcamento {
 
 	public void aplicaDescontoExtra() {
 		estadoAtual.aplicaDescontoExtra(this);
+	}
+
+	public void aprova() {
+		estadoAtual.aprova(this);
+	}
+
+	public void reprova() {
+		estadoAtual.reprova(this);
+	}
+	
+	public void finaliza() {
+		estadoAtual.finaliza(this);
 	}
 
 }
