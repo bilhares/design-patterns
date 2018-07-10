@@ -1,5 +1,8 @@
 package capitulo6;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TesteNotaFiscal {
 	public static void main(String[] args) {
 
@@ -13,5 +16,8 @@ public class TesteNotaFiscal {
 		NotaFiscal nf = builder.constoi();
 
 		System.out.println(nf.getValorBruto());
+		
+		List<String> a = new ArrayList<>();
+		
 	}
 }
