@@ -12,7 +12,7 @@ public class Programa {
 		
 		System.out.println(resultado);
 		
-		ImpressoraVisistor impressora = new ImpressoraVisistor();
+		Visitor impressora = new ImpressoraVisistor();
 		
 		soma.aceita(impressora);
 	}

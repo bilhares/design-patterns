@@ -27,7 +27,7 @@ public class Soma implements Expressao {
 	}
 
 	@Override
-	public void aceita(ImpressoraVisistor impressora) {
+	public void aceita(Visitor impressora) {
 		impressora.visitaSoma(this);
 	}
 }

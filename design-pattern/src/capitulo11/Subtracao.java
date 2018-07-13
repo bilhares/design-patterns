@@ -27,7 +27,7 @@ public class Subtracao implements Expressao {
 	}
 
 	@Override
-	public void aceita(ImpressoraVisistor impressora) {
+	public void aceita(Visitor impressora) {
 		impressora.visitaSubtracao(this);
 
 	}

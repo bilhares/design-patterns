@@ -18,7 +18,7 @@ public class Numero implements Expressao {
 	}
 
 	@Override
-	public void aceita(ImpressoraVisistor impressora) {
+	public void aceita(Visitor impressora) {
 		impressora.visitaNumero(this);
 	}
 
